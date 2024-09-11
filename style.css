@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Love+Ya+Like+A+Sister&display=swap');
+
+:root {
+    --background-color: #EFEBCE;
+    --text-color: #000000;
+    --font: "Architects Daughter", sans-serif;
+    --font-size: 28px;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    text-align:center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    padding: 10px;
+}
+
+
+#username {
+    display: block;
+    margin: 5px;
+}
+
+#pass {
+    display: block;
+    margin: 5px;
+}
+
+.button {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+input {
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+}
