@@ -1,21 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 
 :root {
-    --background-color: #EFEBCE;
-    --text-color: #000000;
-    --font: "Architects Daughter", sans-serif;
-    --font-size: 28px;
+    --text: #18140c;
+    --background: #fdfcfb;
+    --primary: #b0a068;
+    --secondary: #a4cc9d;
+    --accent: #7aba87;
+    --font: "Playpen Sans", sans-serif;
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--background);
     font-family: var(--font);
-    font-size: var(--font-size);
-    color: var(--text-color);
-    text-align:center;
+    color: var(--text);
 }
 
-.main {
+img {
+    width: 100px;
+}
+
+a {
+    color: var(--text);
+}
+
+a:hover {
+    color: var(--accent)
+}
+
+button {
+    background-color: var(--primary);
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 5px 15px rgba(146, 133, 86, 0.5);;
+}
+
+#username {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
+    padding: 5px;
+    margin: 5px;
+}
+
+#password {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
+    padding: 5px;
+    margin: 5px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;     
+    gap: 10px;               
+    margin-top: 20px;        
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,26 +73,21 @@ body {
     padding: 10px;
 }
 
-
-#username {
-    display: block;
-    margin: 5px;
+.footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column;     
+    gap: 10px;               
+    margin: 20px;
+    padding: 10px;
 }
 
-#pass {
-    display: block;
-    margin: 5px;
-}
-
-.button {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
+.meta-logo {
+    width: 20px;
     padding: 5px;
 }
 
-input {
-    border-radius: 5px;
-    border: 0px;
+.help {
     padding: 5px;
 }
